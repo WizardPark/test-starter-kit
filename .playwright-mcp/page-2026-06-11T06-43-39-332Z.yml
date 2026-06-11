@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "스타터킷" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: 스타터킷
+      - navigation "Main" [ref=e9]:
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "홈" [ref=e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e14]:
+            - link "예제" [ref=e15] [cursor=pointer]:
+              - /url: /#examples
+          - listitem [ref=e16]:
+            - link "대시보드" [ref=e17] [cursor=pointer]:
+              - /url: /dashboard
+      - generic [ref=e18]:
+        - button "테마 전환" [ref=e19]:
+          - img
+        - link "시작하기" [ref=e20] [cursor=pointer]:
+          - /url: /dashboard
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - link "예제 목록" [ref=e23] [cursor=pointer]:
+        - /url: /#examples
+        - img
+        - text: 예제 목록
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "폰트 최적화" [level=1] [ref=e26]
+          - generic [ref=e27]: next/font
+        - paragraph [ref=e28]:
+          - code [ref=e29]: next/font/google
+          - text: 로 Google Fonts를 불러오면 빌드 시 자동으로 자체 호스팅되어 외부 네트워크 요청이 발생하지 않습니다.
+      - generic [ref=e30]:
+        - heading "결과" [level=2] [ref=e31]
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: Noto Sans KR
+          - generic [ref=e34]:
+            - paragraph [ref=e35]: 빠르고 아름다운 웹을 만드세요
+            - paragraph [ref=e36]: next/font는 Google Fonts를 자동으로 자체 호스팅합니다. 브라우저가 Google 서버에 별도 요청을 보내지 않아 개인정보 보호와 성능이 향상됩니다.
+            - paragraph [ref=e37]: The quick brown fox jumps over the lazy dog.
+        - generic [ref=e38]:
+          - paragraph [ref=e39]: Inter
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: 빠르고 아름다운 웹을 만드세요
+            - paragraph [ref=e42]: next/font는 Google Fonts를 자동으로 자체 호스팅합니다. 브라우저가 Google 서버에 별도 요청을 보내지 않아 개인정보 보호와 성능이 향상됩니다.
+            - paragraph [ref=e43]: The quick brown fox jumps over the lazy dog.
+      - generic [ref=e44]:
+        - heading "코드" [level=2] [ref=e45]
+        - code [ref=e48]:
+          - generic [ref=e49]: // app/layout.tsx (전체 앱에 적용)
+          - generic [ref=e50]: "import { Noto_Sans_KR } from \"next/font/google\";"
+          - generic [ref=e51]: "const notoSansKr = Noto_Sans_KR({"
+          - generic [ref=e52]: "subsets: [\"latin\"],"
+          - generic [ref=e53]: "weight: [\"400\", \"700\"],"
+          - generic [ref=e54]: "});"
+          - generic [ref=e55]: "export default function RootLayout({ children }) {"
+          - generic [ref=e56]: return (
+          - generic [ref=e57]: "<html lang=\"ko\" className={notoSansKr.className}>"
+          - generic [ref=e58]: "<body>{children}</body>"
+          - generic [ref=e59]: </html>
+          - generic [ref=e60]: );
+          - generic [ref=e61]: "}"
+          - generic [ref=e62]: // 특정 컴포넌트에만 적용할 수도 있습니다
+          - generic [ref=e63]: "const inter = Inter({ subsets: [\"latin\"] });"
+          - generic [ref=e64]: "function MyComponent() {"
+          - generic [ref=e65]: return (
+          - generic [ref=e66]: "<div className={inter.className}>"
+          - generic [ref=e67]: 이 영역만 Inter 폰트가 적용됩니다.
+          - generic [ref=e68]: </div>
+          - generic [ref=e69]: );
+          - generic [ref=e70]: "}"
+        - generic [ref=e71]:
+          - strong [ref=e72]: "참고:"
+          - text: 가변 폰트(variable font)를 사용하면 weight를 배열로 지정할 필요 없이 더 나은 성능과 유연성을 얻을 수 있습니다.
+  - contentinfo [ref=e73]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - img [ref=e78]
+        - generic [ref=e80]: 스타터킷
+      - generic [ref=e81]:
+        - link "홈" [ref=e82] [cursor=pointer]:
+          - /url: /
+        - link "대시보드" [ref=e83] [cursor=pointer]:
+          - /url: /dashboard
+      - paragraph [ref=e84]: © 2026 Next.js 스타터킷. MIT License.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e90] [cursor=pointer]:
+    - img [ref=e91]
+  - alert [ref=e94]

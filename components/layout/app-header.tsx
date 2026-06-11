@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -24,18 +25,20 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
           <Breadcrumb>
             <BreadcrumbList>
               {breadcrumbs.map((crumb, index) => (
-                <BreadcrumbItem key={index}>
-                  {index < breadcrumbs.length - 1 ? (
-                    <>
+                // BreadcrumbSeparator는 BreadcrumbItem(<li>) 바깥에 위치해야 함
+                // li > li 중첩은 잘못된 HTML이므로 Fragment로 분리
+                <Fragment key={index}>
+                  <BreadcrumbItem>
+                    {index < breadcrumbs.length - 1 ? (
                       <BreadcrumbLink href={crumb.href ?? "#"}>
                         {crumb.label}
                       </BreadcrumbLink>
-                      <BreadcrumbSeparator />
-                    </>
-                  ) : (
-                    <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
-                  )}
-                </BreadcrumbItem>
+                    ) : (
+                      <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                    )}
+                  </BreadcrumbItem>
+                  {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
+                </Fragment>
               ))}
             </BreadcrumbList>
           </Breadcrumb>

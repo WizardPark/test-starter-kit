@@ -1,0 +1,109 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "스타터킷 v1.0.0" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+            - generic [ref=e13]:
+              - generic [ref=e14]: 스타터킷
+              - generic [ref=e15]: v1.0.0
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: 개요
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "대시보드" [ref=e22] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e23]
+                - generic [ref=e28]: 대시보드
+            - listitem [ref=e29]:
+              - link "분석" [ref=e30] [cursor=pointer]:
+                - /url: /dashboard/analytics
+                - img [ref=e31]
+                - generic [ref=e33]: 분석
+        - generic [ref=e34]:
+          - generic [ref=e35]: 관리
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "사용자" [ref=e39] [cursor=pointer]:
+                - /url: /dashboard/users
+                - img [ref=e40]
+                - generic [ref=e45]: 사용자
+            - listitem [ref=e46]:
+              - link "설정" [ref=e47] [cursor=pointer]:
+                - /url: /dashboard/settings
+                - img [ref=e48]
+                - generic [ref=e51]: 설정
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - button "U 사용자 user@example.com" [ref=e55]:
+            - generic [ref=e57]: U
+            - generic [ref=e58]:
+              - generic [ref=e59]: 사용자
+              - generic [ref=e60]: user@example.com
+    - main [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - button "Toggle Sidebar" [ref=e64]:
+            - img
+            - generic [ref=e65]: Toggle Sidebar
+          - navigation "breadcrumb" [ref=e66]:
+            - list [ref=e67]:
+              - listitem [ref=e68]:
+                - link "홈" [ref=e69] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e70]:
+                - img [ref=e71]
+              - listitem [ref=e73]:
+                - link "대시보드" [ref=e74] [cursor=pointer]:
+                  - /url: /dashboard
+              - listitem [ref=e75]:
+                - img [ref=e76]
+              - listitem [ref=e78]:
+                - link "설정" [disabled] [ref=e79]
+        - button "테마 전환" [ref=e80]:
+          - img
+      - generic [ref=e81]:
+        - generic [ref=e83]:
+          - heading "설정" [level=1] [ref=e84]
+          - paragraph [ref=e85]: 계정 및 서비스 환경 설정을 관리합니다.
+        - generic [ref=e86]:
+          - tablist [ref=e87]:
+            - tab "일반" [selected] [ref=e88]
+            - tab "계정" [ref=e89]
+            - tab "알림" [ref=e90]
+          - tabpanel "일반" [ref=e91]:
+            - generic [ref=e92]:
+              - heading "프로필 정보" [level=3] [ref=e93]
+              - paragraph [ref=e94]: 공개 프로필에 표시되는 정보입니다.
+              - generic [ref=e95]:
+                - generic [ref=e96]:
+                  - generic [ref=e97]: 이름
+                  - textbox "이름" [ref=e98]: 사용자
+                - generic [ref=e99]:
+                  - generic [ref=e100]: 사용자명
+                  - textbox "사용자명" [ref=e101]: user123
+                - generic [ref=e102]:
+                  - generic [ref=e103]: 이메일
+                  - textbox "이메일" [ref=e104]: user@example.com
+              - button "변경사항 저장" [ref=e106]
+            - generic [ref=e107]:
+              - heading "인터페이스" [level=3] [ref=e108]
+              - paragraph [ref=e109]: 화면 표시 방식을 설정합니다.
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]:
+                    - paragraph [ref=e113]: 사이드바 자동 축소
+                    - paragraph [ref=e114]: 좁은 화면에서 사이드바를 자동으로 숨깁니다.
+                  - switch [checked] [ref=e115]
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - paragraph [ref=e118]: 키보드 단축키
+                    - paragraph [ref=e119]: 키보드 단축키를 활성화합니다.
+                  - switch [checked] [ref=e120]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e126] [cursor=pointer]:
+    - img [ref=e127]
+  - alert [ref=e130]

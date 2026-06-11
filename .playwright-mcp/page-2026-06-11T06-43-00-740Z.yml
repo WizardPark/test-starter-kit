@@ -1,0 +1,189 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "스타터킷 v1.0.0" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+            - generic [ref=e13]:
+              - generic [ref=e14]: 스타터킷
+              - generic [ref=e15]: v1.0.0
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: 개요
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "대시보드" [ref=e22] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e23]
+                - generic [ref=e28]: 대시보드
+            - listitem [ref=e29]:
+              - link "분석" [active] [ref=e30] [cursor=pointer]:
+                - /url: /dashboard/analytics
+                - img [ref=e31]
+                - generic [ref=e33]: 분석
+        - generic [ref=e34]:
+          - generic [ref=e35]: 관리
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "사용자" [ref=e39] [cursor=pointer]:
+                - /url: /dashboard/users
+                - img [ref=e40]
+                - generic [ref=e45]: 사용자
+            - listitem [ref=e46]:
+              - link "설정" [ref=e47] [cursor=pointer]:
+                - /url: /dashboard/settings
+                - img [ref=e48]
+                - generic [ref=e51]: 설정
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - button "U 사용자 user@example.com" [ref=e55]:
+            - generic [ref=e57]: U
+            - generic [ref=e58]:
+              - generic [ref=e59]: 사용자
+              - generic [ref=e60]: user@example.com
+    - main [ref=e61]:
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - button "Toggle Sidebar" [ref=e281]:
+            - img
+            - generic [ref=e282]: Toggle Sidebar
+          - navigation "breadcrumb" [ref=e283]:
+            - list [ref=e284]:
+              - listitem [ref=e285]:
+                - link "홈" [ref=e286] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e287]:
+                - img [ref=e288]
+              - listitem [ref=e290]:
+                - link "대시보드" [ref=e291] [cursor=pointer]:
+                  - /url: /dashboard
+              - listitem [ref=e292]:
+                - img [ref=e293]
+              - listitem [ref=e295]:
+                - link "분석" [disabled] [ref=e296]
+        - button "테마 전환" [ref=e297]:
+          - img
+      - generic [ref=e298]:
+        - generic [ref=e300]:
+          - heading "분석" [level=1] [ref=e301]
+          - paragraph [ref=e302]: 트래픽 현황과 사용자 행동 데이터를 분석합니다.
+        - generic [ref=e303]:
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - generic [ref=e306]: 총 방문자
+              - img [ref=e307]
+            - generic [ref=e310]:
+              - generic [ref=e311]: 38,492
+              - generic [ref=e312]: +18.4% 지난달 대비
+          - generic [ref=e313]:
+            - generic [ref=e314]:
+              - generic [ref=e315]: 페이지뷰
+              - img [ref=e316]
+            - generic [ref=e319]:
+              - generic [ref=e320]: 124,807
+              - generic [ref=e321]: +22.1% 지난달 대비
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - generic [ref=e324]: 평균 체류 시간
+              - img [ref=e325]
+            - generic [ref=e328]:
+              - generic [ref=e329]: 3분 42초
+              - generic [ref=e330]: +0:24 지난달 대비
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - generic [ref=e333]: 이탈률
+              - img [ref=e334]
+            - generic [ref=e337]:
+              - generic [ref=e338]: 41.2%
+              - generic [ref=e339]: "-3.7%p 지난달 대비"
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - heading "인기 페이지" [level=3] [ref=e342]
+            - paragraph [ref=e343]: 이번 달 가장 많이 방문된 페이지입니다.
+            - generic [ref=e344]:
+              - generic [ref=e346]:
+                - generic [ref=e347]: /dashboard
+                - generic [ref=e348]: 18,214
+              - generic [ref=e352]:
+                - generic [ref=e353]: /examples/data-fetching
+                - generic [ref=e354]: 10,847
+              - generic [ref=e358]:
+                - generic [ref=e359]: /examples/form-validation
+                - generic [ref=e360]: 7,392
+              - generic [ref=e364]:
+                - generic [ref=e365]: /examples/fonts
+                - generic [ref=e366]: 4,918
+              - generic [ref=e370]:
+                - generic [ref=e371]: /dashboard/analytics
+                - generic [ref=e372]: 3,204
+          - generic [ref=e375]:
+            - heading "유입 채널" [level=3] [ref=e376]
+            - paragraph [ref=e377]: 방문자가 어디서 유입되었는지 채널별로 확인합니다.
+            - generic [ref=e378]:
+              - generic [ref=e381]:
+                - generic [ref=e382]: 자연 검색
+                - generic [ref=e383]:
+                  - generic [ref=e384]: 40%
+                  - generic [ref=e385]: 15,284
+              - generic [ref=e388]:
+                - generic [ref=e389]: 직접 접속
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 25%
+                  - generic [ref=e392]: 9,623
+              - generic [ref=e395]:
+                - generic [ref=e396]: 소셜 미디어
+                - generic [ref=e397]:
+                  - generic [ref=e398]: 20%
+                  - generic [ref=e399]: 7,698
+              - generic [ref=e402]:
+                - generic [ref=e403]: 추천 링크
+                - generic [ref=e404]:
+                  - generic [ref=e405]: 10%
+                  - generic [ref=e406]: 3,847
+              - generic [ref=e409]:
+                - generic [ref=e410]: 기타
+                - generic [ref=e411]:
+                  - generic [ref=e412]: 5%
+                  - generic [ref=e413]: 2,040
+        - generic [ref=e414]:
+          - heading "페이지별 상세 지표" [level=3] [ref=e415]
+          - paragraph [ref=e416]: 각 페이지의 방문자, 이탈률, 평균 체류 시간을 확인합니다.
+          - table [ref=e418]:
+            - rowgroup [ref=e419]:
+              - row "페이지 방문자 이탈률 평균 체류" [ref=e420]:
+                - columnheader "페이지" [ref=e421]
+                - columnheader "방문자" [ref=e422]
+                - columnheader "이탈률" [ref=e423]
+                - columnheader "평균 체류" [ref=e424]
+            - rowgroup [ref=e425]:
+              - row "/dashboard 18,214 45% 4분 40초" [ref=e426]:
+                - cell "/dashboard" [ref=e427]
+                - cell "18,214" [ref=e428]
+                - cell "45%" [ref=e429]
+                - cell "4분 40초" [ref=e430]
+              - row "/examples/data-fetching 10,847 41% 3분 00초" [ref=e431]:
+                - cell "/examples/data-fetching" [ref=e432]
+                - cell "10,847" [ref=e433]
+                - cell "41%" [ref=e434]
+                - cell "3분 00초" [ref=e435]
+              - row "/examples/form-validation 7,392 39% 2분 41초" [ref=e436]:
+                - cell "/examples/form-validation" [ref=e437]
+                - cell "7,392" [ref=e438]
+                - cell "39%" [ref=e439]
+                - cell "2분 41초" [ref=e440]
+              - row "/examples/fonts 4,918 38% 1분 27초" [ref=e441]:
+                - cell "/examples/fonts" [ref=e442]
+                - cell "4,918" [ref=e443]
+                - cell "38%" [ref=e444]
+                - cell "1분 27초" [ref=e445]
+              - row "/dashboard/analytics 3,204 37% 1분 18초" [ref=e446]:
+                - cell "/dashboard/analytics" [ref=e447]
+                - cell "3,204" [ref=e448]
+                - cell "37%" [ref=e449]
+                - cell "1분 18초" [ref=e450]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e134] [cursor=pointer]:
+    - img [ref=e135]
+  - alert [ref=e138]: 분석 - 스타터킷 | Next.js 스타터킷

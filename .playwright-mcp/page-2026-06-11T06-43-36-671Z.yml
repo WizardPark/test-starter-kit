@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "스타터킷" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: 스타터킷
+      - navigation "Main" [ref=e9]:
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "홈" [ref=e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e14]:
+            - link "예제" [ref=e15] [cursor=pointer]:
+              - /url: /#examples
+          - listitem [ref=e16]:
+            - link "대시보드" [ref=e17] [cursor=pointer]:
+              - /url: /dashboard
+      - generic [ref=e18]:
+        - button "테마 전환" [ref=e19]:
+          - img
+        - link "시작하기" [ref=e20] [cursor=pointer]:
+          - /url: /dashboard
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - link "예제 목록" [ref=e23] [cursor=pointer]:
+        - /url: /#examples
+        - img
+        - text: 예제 목록
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "폼 검증" [level=1] [ref=e26]
+          - generic [ref=e27]: react-hook-form + zod
+        - paragraph [ref=e28]:
+          - code [ref=e29]: zod
+          - text: 로 스키마를 정의하고,
+          - code [ref=e30]: react-hook-form
+          - text: 으로 폼 상태를 관리합니다. 불필요한 리렌더링 없이 실시간 유효성 검사를 제공합니다.
+      - generic [ref=e31]:
+        - heading "결과" [level=2] [ref=e32]
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: 이름
+            - textbox "이름" [ref=e36]:
+              - /placeholder: 홍길동
+          - generic [ref=e37]:
+            - generic [ref=e38]: 이메일
+            - textbox "이메일" [ref=e39]:
+              - /placeholder: hello@example.com
+          - generic [ref=e40]:
+            - generic [ref=e41]: 메시지
+            - textbox "메시지" [ref=e42]:
+              - /placeholder: 문의 내용을 입력하세요...
+          - button "제출" [ref=e43]
+      - generic [ref=e44]:
+        - heading "코드" [level=2] [ref=e45]
+        - code [ref=e48]:
+          - generic [ref=e49]: "\"use client\";"
+          - generic [ref=e50]: "import { useForm } from \"react-hook-form\";"
+          - generic [ref=e51]: "import { zodResolver } from \"@hookform/resolvers/zod\";"
+          - generic [ref=e52]: "import { z } from \"zod\";"
+          - generic [ref=e53]: // 1. zod로 스키마 정의
+          - generic [ref=e54]: "const schema = z.object({"
+          - generic [ref=e55]: "name: z.string().min(2, \"이름은 2자 이상이어야 합니다.\"),"
+          - generic [ref=e56]: "email: z.string().email(\"올바른 이메일 형식을 입력하세요.\"),"
+          - generic [ref=e57]: "message: z.string().min(10, \"메시지는 10자 이상이어야 합니다.\"),"
+          - generic [ref=e58]: "});"
+          - generic [ref=e59]: type FormValues = z.infer<typeof schema>;
+          - generic [ref=e60]: "export default function ContactForm() {"
+          - generic [ref=e61]: // 2. zodResolver로 연결
+          - generic [ref=e62]: "const { register, handleSubmit, formState: { errors } } ="
+          - generic [ref=e63]: "useForm<FormValues>({ resolver: zodResolver(schema) });"
+          - generic [ref=e64]: "function onSubmit(data: FormValues) {"
+          - generic [ref=e65]: console.log(data); // 타입 안전한 데이터
+          - generic [ref=e66]: "}"
+          - generic [ref=e67]: return (
+          - generic [ref=e68]: "<form onSubmit={handleSubmit(onSubmit)}>"
+          - generic [ref=e69]: "<input {...register(\"name\")} />"
+          - generic [ref=e70]: "{errors.name && <p>{errors.name.message}</p>}"
+          - generic [ref=e71]: "{/* ... */}"
+          - generic [ref=e72]: </form>
+          - generic [ref=e73]: );
+          - generic [ref=e74]: "}"
+  - contentinfo [ref=e75]:
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - img [ref=e80]
+        - generic [ref=e82]: 스타터킷
+      - generic [ref=e83]:
+        - link "홈" [ref=e84] [cursor=pointer]:
+          - /url: /
+        - link "대시보드" [ref=e85] [cursor=pointer]:
+          - /url: /dashboard
+      - paragraph [ref=e86]: © 2026 Next.js 스타터킷. MIT License.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e92] [cursor=pointer]:
+    - img [ref=e93]
+  - alert [ref=e96]

@@ -1,0 +1,178 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "스타터킷 v1.0.0" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+            - generic [ref=e13]:
+              - generic [ref=e14]: 스타터킷
+              - generic [ref=e15]: v1.0.0
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: 개요
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "대시보드" [ref=e22] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e23]
+                - generic [ref=e28]: 대시보드
+            - listitem [ref=e29]:
+              - link "분석" [ref=e30] [cursor=pointer]:
+                - /url: /dashboard/analytics
+                - img [ref=e31]
+                - generic [ref=e33]: 분석
+        - generic [ref=e34]:
+          - generic [ref=e35]: 관리
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "사용자" [ref=e39] [cursor=pointer]:
+                - /url: /dashboard/users
+                - img [ref=e40]
+                - generic [ref=e45]: 사용자
+            - listitem [ref=e46]:
+              - link "설정" [ref=e47] [cursor=pointer]:
+                - /url: /dashboard/settings
+                - img [ref=e48]
+                - generic [ref=e51]: 설정
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - button "U 사용자 user@example.com" [ref=e55]:
+            - generic [ref=e57]: U
+            - generic [ref=e58]:
+              - generic [ref=e59]: 사용자
+              - generic [ref=e60]: user@example.com
+    - main [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - button "Toggle Sidebar" [ref=e64]:
+            - img
+            - generic [ref=e65]: Toggle Sidebar
+          - navigation "breadcrumb" [ref=e66]:
+            - list [ref=e67]:
+              - listitem [ref=e68]:
+                - link "홈" [ref=e69] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e70]:
+                - img [ref=e71]
+              - listitem [ref=e73]:
+                - link "대시보드" [disabled] [ref=e74]
+        - button "테마 전환" [ref=e75]:
+          - img
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "대시보드" [level=1] [ref=e79]
+            - paragraph [ref=e80]: 서비스 현황과 주요 지표를 한눈에 확인하세요.
+          - button "새로 만들기" [ref=e82]:
+            - img
+            - text: 새로 만들기
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: 총 사용자
+              - img [ref=e87]
+            - generic [ref=e92]:
+              - generic [ref=e93]: 12,847
+              - generic [ref=e94]: +12% 지난달 대비
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: 월 매출
+              - img [ref=e98]
+            - generic [ref=e100]:
+              - generic [ref=e101]: ₩2,450,000
+              - generic [ref=e102]: +8.2% 지난달 대비
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: 활성 세션
+              - img [ref=e106]
+            - generic [ref=e108]:
+              - generic [ref=e109]: 1,293
+              - generic [ref=e110]: "-3.1% 지난달 대비"
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: 전환율
+              - img [ref=e114]
+            - generic [ref=e117]:
+              - generic [ref=e118]: 3.24%
+              - generic [ref=e119]: +0.4%p 지난달 대비
+        - generic [ref=e120]:
+          - tablist [ref=e121]:
+            - tab "개요" [selected] [ref=e122]
+            - tab "사용자" [ref=e123]
+          - tabpanel "개요" [ref=e124]:
+            - generic [ref=e125]:
+              - heading "최근 가입 사용자" [level=3] [ref=e126]
+              - paragraph [ref=e127]: 최근 5명의 신규 가입자입니다.
+              - table [ref=e129]:
+                - rowgroup [ref=e130]:
+                  - row "사용자 역할 상태 가입일" [ref=e131]:
+                    - columnheader "사용자" [ref=e132]
+                    - columnheader "역할" [ref=e133]
+                    - columnheader "상태" [ref=e134]
+                    - columnheader "가입일" [ref=e135]
+                - rowgroup [ref=e136]:
+                  - row "김 김민준 minjun@example.com 관리자 활성 2024-01-15" [ref=e137]:
+                    - cell "김 김민준 minjun@example.com" [ref=e138]:
+                      - generic [ref=e139]:
+                        - generic [ref=e141]: 김
+                        - generic [ref=e142]:
+                          - paragraph [ref=e143]: 김민준
+                          - paragraph [ref=e144]: minjun@example.com
+                    - cell "관리자" [ref=e145]:
+                      - generic [ref=e146]: 관리자
+                    - cell "활성" [ref=e147]:
+                      - generic [ref=e148]: 활성
+                    - cell "2024-01-15" [ref=e149]
+                  - row "이 이서연 seoyeon@example.com 사용자 활성 2024-01-14" [ref=e150]:
+                    - cell "이 이서연 seoyeon@example.com" [ref=e151]:
+                      - generic [ref=e152]:
+                        - generic [ref=e154]: 이
+                        - generic [ref=e155]:
+                          - paragraph [ref=e156]: 이서연
+                          - paragraph [ref=e157]: seoyeon@example.com
+                    - cell "사용자" [ref=e158]:
+                      - generic [ref=e159]: 사용자
+                    - cell "활성" [ref=e160]:
+                      - generic [ref=e161]: 활성
+                    - cell "2024-01-14" [ref=e162]
+                  - row "박 박지호 jiho@example.com 사용자 비활성 2024-01-13" [ref=e163]:
+                    - cell "박 박지호 jiho@example.com" [ref=e164]:
+                      - generic [ref=e165]:
+                        - generic [ref=e167]: 박
+                        - generic [ref=e168]:
+                          - paragraph [ref=e169]: 박지호
+                          - paragraph [ref=e170]: jiho@example.com
+                    - cell "사용자" [ref=e171]:
+                      - generic [ref=e172]: 사용자
+                    - cell "비활성" [ref=e173]:
+                      - generic [ref=e174]: 비활성
+                    - cell "2024-01-13" [ref=e175]
+                  - row "최 최유나 yuna@example.com 편집자 활성 2024-01-12" [ref=e176]:
+                    - cell "최 최유나 yuna@example.com" [ref=e177]:
+                      - generic [ref=e178]:
+                        - generic [ref=e180]: 최
+                        - generic [ref=e181]:
+                          - paragraph [ref=e182]: 최유나
+                          - paragraph [ref=e183]: yuna@example.com
+                    - cell "편집자" [ref=e184]:
+                      - generic [ref=e185]: 편집자
+                    - cell "활성" [ref=e186]:
+                      - generic [ref=e187]: 활성
+                    - cell "2024-01-12" [ref=e188]
+                  - row "정 정도윤 doyun@example.com 사용자 활성 2024-01-11" [ref=e189]:
+                    - cell "정 정도윤 doyun@example.com" [ref=e190]:
+                      - generic [ref=e191]:
+                        - generic [ref=e193]: 정
+                        - generic [ref=e194]:
+                          - paragraph [ref=e195]: 정도윤
+                          - paragraph [ref=e196]: doyun@example.com
+                    - cell "사용자" [ref=e197]:
+                      - generic [ref=e198]: 사용자
+                    - cell "활성" [ref=e199]:
+                      - generic [ref=e200]: 활성
+                    - cell "2024-01-11" [ref=e201]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e207] [cursor=pointer]:
+    - img [ref=e208]
