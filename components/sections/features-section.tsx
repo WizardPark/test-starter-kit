@@ -4,6 +4,7 @@ import {
   Type,
   LayoutGrid,
   ClipboardList,
+  LayoutPanelLeft,
 } from "lucide-react";
 import {
   Card,
@@ -42,6 +43,13 @@ const examples = [
     description:
       "react-hook-form과 zod를 사용하여 타입 안전한 폼 검증과 실시간 에러 메시지를 구현하는 방법을 확인하세요.",
     href: "/examples/form-validation",
+  },
+  {
+    icon: LayoutPanelLeft,
+    title: "레이아웃 패턴",
+    description:
+      "Flexbox와 CSS Grid로 반응형 사이드바·Sticky 헤더 레이아웃을 구성하는 방법을 확인하세요.",
+    href: "/examples/layout-patterns",
   },
 ];
 
