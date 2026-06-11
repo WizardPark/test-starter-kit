@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+*.png
+
+# playwright-mcp (세션 스냅샷 및 로그)
+.playwright-mcp/
 
 # debug
 npm-debug.log*
