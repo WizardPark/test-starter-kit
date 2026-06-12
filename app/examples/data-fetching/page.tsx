@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { headers } from "next/headers";
@@ -25,7 +26,7 @@ async function getPosts(): Promise<Post[]> {
   return res.json();
 }
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "데이터 페칭 예제",
 };
 

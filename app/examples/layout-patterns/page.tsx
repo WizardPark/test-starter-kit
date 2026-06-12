@@ -1,4 +1,5 @@
 // Server Component — CodeBlock(async Server)을 직접 사용 가능
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { CodeBlock } from "@/components/shared/code-block";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "레이아웃 패턴 예제",
 };
 

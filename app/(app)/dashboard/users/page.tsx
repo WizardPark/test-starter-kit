@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { UserPlus, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +16,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "사용자 - 스타터킷",
 };
 

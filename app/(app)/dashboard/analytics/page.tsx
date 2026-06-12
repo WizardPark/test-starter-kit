@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { Eye, TrendingUp, Clock, LogOut } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { StatCard } from "@/components/shared/stat-card";
 import { PageHeader } from "@/components/shared/page-header";
 import { AppHeader } from "@/components/layout/app-header";
@@ -11,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "분석 - 스타터킷",
 };
 
@@ -126,7 +128,7 @@ export default function AnalyticsPage() {
             <div className="space-y-3">
               {channels.map((channel) => (
                 <div key={channel.name} className="flex items-center gap-3">
-                  <div className={`h-2.5 w-2.5 rounded-full ${channel.color}`} />
+                  <div className={cn("h-2.5 w-2.5 rounded-full", channel.color)} />
                   <div className="flex flex-1 items-center justify-between text-sm">
                     <span>{channel.name}</span>
                     <div className="flex items-center gap-3">

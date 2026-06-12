@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Zap } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { navLinks } from "@/lib/nav-links";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { MobileNav } from "@/components/layout/mobile-nav";
@@ -13,12 +15,6 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-
-const navLinks = [
-  { href: "/", label: "홈" },
-  { href: "/#examples", label: "예제" },
-  { href: "/dashboard", label: "대시보드" },
-];
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,11 +27,10 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
-        scrolled
-          ? "border-b bg-background/80 backdrop-blur-sm"
-          : "bg-transparent"
-      }`}
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-200",
+        scrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-transparent"
+      )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         {/* 로고 */}

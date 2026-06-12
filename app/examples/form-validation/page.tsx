@@ -1,4 +1,5 @@
 // Server Component — ContactForm(Client)과 CodeBlock(async Server)을 함께 사용
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { CodeBlock } from "@/components/shared/code-block";
 import { ContactForm } from "./contact-form";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "폼 검증 예제",
 };
 

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Noto_Sans_KR, Inter } from "next/font/google";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CodeBlock } from "@/components/shared/code-block";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "폰트 최적화 예제",
 };
 

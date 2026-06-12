@@ -30,8 +30,10 @@ export function ContactForm() {
     resolver: zodResolver(schema),
   });
 
-  function onSubmit(data: FormValues) {
-    console.log(data);
+  // async로 선언하여 isSubmitting 상태가 제출 중에 올바르게 동작
+  async function onSubmit(data: FormValues) {
+    // 실제 API 호출 시뮬레이션 (isSubmitting 활성화)
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     toast.success("제출 완료!", {
       description: `${data.name}님의 메시지가 전송되었습니다.`,
     });

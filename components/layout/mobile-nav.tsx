@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { navLinks } from "@/lib/nav-links";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -11,12 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const navLinks = [
-  { href: "/", label: "홈" },
-  { href: "/#examples", label: "예제" },
-  { href: "/dashboard", label: "대시보드" },
-];
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
