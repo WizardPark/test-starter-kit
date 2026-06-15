@@ -43,6 +43,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Claude Code - Slack webhook URL (비밀값 - 커밋 금지)
-.claude/.slack-webhook-url
